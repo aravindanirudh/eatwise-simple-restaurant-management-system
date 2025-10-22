@@ -1,0 +1,66 @@
+PPT instructions 
+
+Background: White
+Design: Simple and clean (use black or dark gray text, same font throughout)
+Content: Maximum 4 bullet points per slide
+Font Size: Minimum 20 pt for readability
+Images/Diagrams: Clear and centered
+
+Slide 1 
+Title Slide,Project Title,Your Name,Department / Semester / College Name
+
+Slide 2
+ Index
+Introduction
+Implementation
+Code
+Results
+Conclusion
+
+Slide 3 
+ Introduction
+Brief description of your project
+Objective of the project
+Tools and technologies used
+Purpose or motivation behind the project
+
+Slide 4 
+Implementation Overview
+System architecture / use case description
+Modules or major components of your system
+User roles (e.g., Admin, User, Guest)
+
+Slide 5 
+Use Case Diagram
+Insert your Use Case Diagram
+1–2 bullet points describing main functions
+
+Slide 6 
+Sequence Diagram
+Insert Sequence Diagram
+1–2 points describing key interactions
+
+Slide 7 
+ER Diagram
+Insert Entity-Relationship Diagram
+1–2 points describing database structure
+
+Slide 8–9 
+Code
+Include only important logic (main code snippets, algorithms, or key SQL commands)
+Example:
+Code for login validation
+SQL table creation / main queries
+3–4 points explaining code purpose
+
+Slide 10–11 
+Results
+Screenshots of your project pages (Login, Home, Insert Data, Reports, etc.)
+Each slide: 2–3 screenshots max
+1–2 short points describing output
+
+Slide 12
+Conclusion
+Summary of project work
+Technologies learned
+Future scope or possible improvements
