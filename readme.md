@@ -1,15 +1,15 @@
-# EatWise — Restaurant Management System
+# EatWise - Restaurant Management System
 - Comprehensive project repository for a simple restaurant management web app named "EatWise". This repository includes a React + Vite frontend and a Node.js backend that connects to a MySQL database. The database, schema, test data, and triggers are provided in this repository as well
 - Created as a project for Database Management Systems Lab (CSL333) in Semester 5 (S5) of Bachelor of Technology (BTech) in Computer Science and Engineering (CSE) in APJ Abdul Kalam Technological University (KTU)
 
 ---
 
 ## Contents of this repository
-- `frontend/` — React (Vite) single-page application. UI components, pages, and assets live here
-- `backend/` — Node.js Express server (single-file `index.js`) that exposes API endpoints used by the frontend and connects to the MySQL database
-- `restaurant_schema.sql` — SQL dump containing schema, table definitions, sample data and triggers
-- `order_suborder_triggers.sql` — Simplified trigger definitions used to keep order totals consistent
-- `readme.md` — This file (project documentation)
+- `frontend/` - React (Vite) single-page application. UI components, pages, and assets live here
+- `backend/` - Node.js Express server (single-file `index.js`) that exposes API endpoints used by the frontend and connects to the MySQL database
+- `restaurant_schema.sql` - SQL dump containing schema, table definitions, sample data and triggers
+- `order_suborder_triggers.sql` - Simplified trigger definitions used to keep order totals consistent
+- `readme.md` - This file (project documentation)
 
 ---
 
@@ -37,7 +37,7 @@ Important relationships:
 - `orders(order_id)` -> `order_items(order_id)`
 - `users(user_id)` -> `reviews(user_id)`
 
-Auto-increment is enabled on the appropriate primary keys (see `restaurant_schema.sql`). Do not change those columns unless you know the consequences — the frontend/backend depend on auto-increment behavior for IDs
+Auto-increment is enabled on the appropriate primary keys (see `restaurant_schema.sql`). Do not change those columns unless you know the consequences - the frontend/backend depend on auto-increment behavior for IDs
 
 ---
 
@@ -53,7 +53,7 @@ These triggers ensure there is a single source of truth for order totals and avo
 
 ---
 
-## Setup — local development (Windows)
+## Setup - local development (Windows)
 Prerequisites
 - Node.js (v16+ recommended)
 - npm (comes with Node.js)
@@ -89,7 +89,7 @@ npm install
 ```
 
 4. Configure MySQL credentials used by the backend
-- Open `backend/index.js` and update the connection settings (host, user, password, database) if your MySQL install uses different credentials. By default the project used the password 'Aravind2005' during authoring — change it for your environment
+- Open `backend/index.js` and update the connection settings (host, user, password, database) if your MySQL install uses different credentials. By default the project used the password 'Aravind2005' during authoring - change it for your environment
 
 5. Run the app
 - Start the backend server (opens an API port; see `backend/index.js` for the port used):
@@ -103,15 +103,15 @@ cd ../frontend
 npm run dev
 ```
 
-6. Open the frontend in your browser. Vite will show a local URL (typically `http://localhost:5173`) — open it to see the app
+6. Open the frontend in your browser. Vite will show a local URL (typically `http://localhost:5173`) - open it to see the app
 
 Notes
 - If ports are in use, Vite or the backend server will either pick a different port or fail. Adjust the commands or kill conflicting processes
-- The app uses in-database credential checking. Passwords in the sample DB are plain-text for demo only — do not use this approach in production
+- The app uses in-database credential checking. Passwords in the sample DB are plain-text for demo only - do not use this approach in production
 
 ---
 
-## How the system works — short technical contract
+## How the system works - short technical contract
 Inputs
 - HTTP requests from the frontend to the Node.js backend (REST endpoints)
 - MySQL database (the `restaurant_schema`)
@@ -177,7 +177,7 @@ If the trigger isn't present (for example, your import skipped it), you can appl
 
 ## Security & limitations
 - Passwords in `users` are stored as plain text for demonstration. For any production or grading that expects secure practice, note this limitation and propose using hashed passwords (bcrypt) and proper authentication flows
-- No role-based authorization middleware beyond simple role checks in the frontend. The backend is minimal and trusts frontend input in places — be mindful when extending
+- No role-based authorization middleware beyond simple role checks in the frontend. The backend is minimal and trusts frontend input in places - be mindful when extending
 
 ---
 
